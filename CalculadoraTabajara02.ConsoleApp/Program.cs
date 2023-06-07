@@ -45,6 +45,68 @@
 
                 #endregion
             }
+
+            #region Realizar Calculo
+
+            Console.Clear();
+
+            Console.WriteLine("Calculadora Tabajara 1.0\n");
+
+            string operacao = "";
+
+            switch (opcao)
+            {
+                case "1": operacao = "Adição"; break;
+
+                case "2": operacao = "Subtração"; break;
+
+                case "3": operacao = "Multiplicação"; break;
+
+                case "4": operacao = "Divisão"; break;
+
+                case "5":
+                    {
+                        Console.WriteLine("Visualizando operações realizadas: \n");
+
+                        foreach (string op in operacoes)
+                        {
+                            Console.WriteLine(op);
+                        }
+
+                        Console.ReadLine();
+                    };
+                    continue;
+
+                default:
+                break;
+            }
+
+            string subtitulo = $"Novo calculo de {operacao}";
+
+            Console.WriteLine(subtitulo + "\n");
+
+            Console.Write($"Digite o primeiro número: ");
+            double primeiroNumero = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write($"Digite o segundo número: ");
+            double segundoNumero = Convert.ToDouble(Console.ReadLine());
+
+            double resultado = 0;
+
+            switch (opcao)
+            {
+                case "1": resultado = primeiroNumero + segundoNumero; break;
+
+                case "2": resultado = primeiroNumero - segundoNumero; break;
+
+                case "3": resultado = primeiroNumero * segundoNumero; break;
+
+                case "4": resultado = primeiroNumero / segundoNumero; break;
+
+                default:
+                break;
+            }
+            
         }
     }
 }
