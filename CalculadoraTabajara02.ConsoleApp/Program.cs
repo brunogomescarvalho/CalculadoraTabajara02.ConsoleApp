@@ -45,6 +45,8 @@
 
                 #endregion
 
+
+                #region Realizar Calculo
                 #region Realizar Calculo
 
                 Console.Clear();
