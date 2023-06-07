@@ -1,4 +1,6 @@
-﻿namespace CalculadoraTabajara02.ConsoleApp
+﻿using System.Reflection.Metadata;
+
+namespace CalculadoraTabajara02.ConsoleApp
 {
     internal class Program
     {
@@ -45,8 +47,6 @@
 
                 #endregion
 
-
-                #region Realizar Calculo
                 #region Realizar Calculo
 
                 Console.Clear();
@@ -103,7 +103,7 @@
                     case "3": resultado = primeiroNumero * segundoNumero; break;
 
                     case "4": resultado = primeiroNumero / segundoNumero; break;
-
+                                       
                     default:
                         break;
                 }
@@ -142,6 +142,7 @@
                 Console.ReadLine();
 
                 Console.Clear();
+
                 #endregion
             }
         }
