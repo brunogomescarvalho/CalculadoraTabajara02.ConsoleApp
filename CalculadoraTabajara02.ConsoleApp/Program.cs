@@ -178,5 +178,10 @@ namespace CalculadoraTabajara02.ConsoleApp
 
            return  Console.ReadLine()!;
         }
+
+        public void Teste()
+        {
+
+        }
     }
 }
