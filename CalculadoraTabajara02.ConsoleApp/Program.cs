@@ -1,4 +1,5 @@
 ﻿using System.Reflection.Metadata;
+using System.Security.Cryptography.X509Certificates;
 
 namespace CalculadoraTabajara02.ConsoleApp
 {
@@ -29,6 +30,8 @@ namespace CalculadoraTabajara02.ConsoleApp
                 Console.WriteLine("Digite 4 para Divisão\n");
 
                 Console.WriteLine("Digite 5 para Visualizar as operações\n");
+
+                Console.WriteLine("Digite 6 para fazer nada\n");
 
                 Console.WriteLine("Digite S para sair\n");
 
@@ -112,7 +115,7 @@ namespace CalculadoraTabajara02.ConsoleApp
                 #region Mostrar Resultado
                 Console.Clear();
 
-                Console.WriteLine("Calculadora Tabajara 1.0\n");
+                Console.WriteLine("Calculadora Tabajara 7.0 3D\n");
 
                 Console.WriteLine("Tela de Resultados\n");
 
@@ -135,6 +138,12 @@ namespace CalculadoraTabajara02.ConsoleApp
 
                 string descricaoOperacao = $"{primeiroNumero} {simbolo} {segundoNumero} = {resultado}";
 
+
+
+                Console.WriteLine("OLÁ CALCULADORA");
+
+
+
                 operacoes.Add(descricaoOperacao);
 
                 Console.WriteLine();
@@ -145,6 +154,7 @@ namespace CalculadoraTabajara02.ConsoleApp
 
                 #endregion
             }
+
         }
     }
 }
